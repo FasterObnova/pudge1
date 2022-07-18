@@ -12,15 +12,19 @@ public class Task2 {
 
         if(chas > 23) {
             System.out.println(">:(");
+            System.exit(1);
         }
         if(chas < 0) {
             System.out.println(">:(");
+            System.exit(1);
         }
         if(min > 59) {
             System.out.println(">:(");
+            System.exit(1);
         }
         if(min < 0) {
             System.out.println(">:(");
+            System.exit(1);
         }
         if(time >= 2300 && time <= 2359) {
             System.out.println("Otboi");
