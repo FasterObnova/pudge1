@@ -68,10 +68,10 @@ public class Task2 {
         if(time >= 1700 && time <= 1829) {
             System.out.println("kaif");
         }
-        if(time >= 1830 && time <= 1839) {
+        if(time >= 1830 && time <= 1859) {
             System.out.println("Ujin");
         }
-        if(time >= 1840 && time <= 1959) {
+        if(time >= 1900 && time <= 1959) {
             System.out.println("Kaif");
         }
         if(time >= 2000 && time <= 2259) {
