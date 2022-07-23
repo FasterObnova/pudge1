@@ -68,7 +68,7 @@ public class Task4 {
 
         //7
         for (int i = 0; i < aoi.length; i++) {
-            aoi[i] = i * i;
+            aoi[i] = i;
         }
         for (int current : aoi) {
             System.out.print(current + " ");
