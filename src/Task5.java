@@ -11,10 +11,12 @@ public class Task5 {
         }
 
         //Max
+        int maxel = 0;
         int max = array[0];
         for(int i = 0; i < array.length; i++) {
             if(array[i] > max) {
                 max = array[i];
+                maxel = i;
             }
         }
 
@@ -22,10 +24,12 @@ public class Task5 {
         System.out.println("Max: " + max);
 
         //Min
+        int minel = 0;
         int min = array[0];
         for(int i = 0; i < array.length; i++) {
             if(array[i] < min) {
                 min = array[i];
+                minel = i;
             }
         }
 
@@ -42,14 +46,14 @@ public class Task5 {
         System.out.println("Mid: " + mid);
 
         //Max~Min
-        int kolvo = array[0];
-        for(int i = 0; i < array.length; i++) {
-            if(array[i] > max) {
-                max = array[i];
-            }
+        int imax = array[maxel];
+        int imin = array[minel];
+        int kolvoel = maxel - minel;
+        if (kolvoel < 0) {
+            kolvoel *= -1;
         }
 
-        System.out.println("Max~Min: " + kolvo);
+        System.out.println("Max~Min: " + (kolvoel-1));
 
     }
 }
